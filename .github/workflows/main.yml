@@ -1,0 +1,17 @@
+name: Grass Is Greener
+
+on: 
+  schedule: 
+    - cron: "59 23 * * *"
+  workflow_dispatch
+
+jobs:
+  update_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get Date
+        run: |
+          date > ./data.md
+          ls
+      - uses: stefanzweifel/git-auto-commit-action@v4
