@@ -1,8 +1,11 @@
 name: Grass Is Greener
 
-on: 
+on:
+  push:
+    branches:
+      - master
   schedule: 
-    - cron: "40 23 * * *"
+    - cron: "50 23 * * *"
   #workflow_dispatch:
 
 jobs:
