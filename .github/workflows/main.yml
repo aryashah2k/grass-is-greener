@@ -2,7 +2,7 @@ name: Grass Is Greener
 
 on: 
   schedule: 
-    - cron: "59 23 * * *"
+    - cron: "40 23 * * *"
   #workflow_dispatch:
 
 jobs:
