@@ -1,19 +1,15 @@
 name: Grass Is Greener
 
 on:
-#   push:
-#     branches:
-#       - master
-  schedule: 
-    - cron: '50 23 * * *'
-  #workflow_dispatch:
-
+  schedule:
+    - cron : "4 04 * * *"
+  workflow_dispatch:
 jobs:
   update_and_push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Get Date
+      - uses: actions/checkout@v2
+      - name: Get date
         run: |
           date > ./data.md
           ls
