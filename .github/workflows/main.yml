@@ -2,7 +2,7 @@ name: Grass Is Greener
 
 on:
   schedule:
-    - cron : "11 09 * * *"
+    - cron : "40 06 * * *"
   
 jobs:
   update_and_push:
