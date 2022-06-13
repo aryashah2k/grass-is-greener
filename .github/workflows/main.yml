@@ -2,8 +2,8 @@ name: Grass Is Greener
 
 on:
   schedule:
-    - cron : "4 04 * * *"
-  workflow_dispatch:
+    - cron : "11 09 * * *"
+  
 jobs:
   update_and_push:
     runs-on: ubuntu-latest
