@@ -1,8 +1,8 @@
 name: Grass Is Greener
 
-on:
-  schedule:
-    - cron : "40 06 * * *"
+#on:
+#  schedule:
+#    - cron : "40 06 * * *"
   
 jobs:
   update_and_push:
